@@ -1,2 +1,4 @@
 *.un~
 vhall.pem
+*.pem
+*.crx

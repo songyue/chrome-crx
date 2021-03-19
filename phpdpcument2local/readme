@@ -1,0 +1,14 @@
+访问PHP.net网站经常加载很慢,下载了离线的html版本,但是不支持搜索功能,所以有了这个需求,访问php.net网站时,点击插件按钮新窗口打开本地对应的文档页面
+
+功能点:
+将本地文档路径保存至 storage
+popup页面按钮事件
+    打开新窗口
+获取当前访问域名,如php.net 则插件有效
+获取url的path,替换为本地对应的路径页面
+原地址 https://www.php.net/manual/zh/wrappers.php
+本地地址 file:///Users/songyue/work/php-chunked-xhtml/wrappers.html
+匹配规则
+manual/zh => {local_path}
+后缀 .php  => .html
+新窗口打开
