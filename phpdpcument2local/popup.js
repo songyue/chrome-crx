@@ -17,7 +17,8 @@ openLocalTab.addEventListener("click", async () => {
         return ;
     }
     local_url = current_url.replace(/(https|http):\/\/(www\.){0,1}php.net\/manual\/([a-z]+)/, openLocalTab.target_url)
-    local_url = local_url.replace(/php$/, 'html')
+    local_url = local_url.replace(/(php$)/, 'html')
+    local_url = local_url.replace(/(php#)/, 'html#')
 
     await chrome.tabs.create({url: local_url});
 });
