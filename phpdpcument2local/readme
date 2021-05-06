@@ -12,3 +12,9 @@ popup页面按钮事件
 manual/zh => {local_path}
 后缀 .php  => .html
 新窗口打开
+
+todo
+部分连接地址不规范,优化方案
+1.网页head标签内,正则匹配包含 manual/zh 字符的 link 标签,
+如:  <link rel="alternate" href="https://www.php.net/manual/zh/function.escapeshellarg.php" hreflang="zh">
+解析为本地地址

@@ -13,7 +13,7 @@ openLocalTab.addEventListener("click", async () => {
     // 当前url
     current_url = tab.url
     // 判断是否为 php.net
-    if(current_url.search(/\https:\/\/www.php.net\/manual\/[a-z]/) != 0) {
+    if(current_url.search(/\https:\/\/www.php.net\/manual\/([a-zA-Z\_])/) != 0) {
         return ;
     }
     local_url = current_url.replace(/(https|http):\/\/(www\.){0,1}php.net\/manual\/([a-z]+)/, openLocalTab.target_url)
